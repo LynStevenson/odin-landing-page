@@ -8,10 +8,38 @@ body {
     flex-flow: column;
 }
 
+a {
+    text-decoration: none;
+}
+
+.box {
+    width: 800px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.header-links,
+.header-content {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.header-content {
+    justify-content: space-between;
+}
+
+.header-links {
+    gap: 20px;
 }
 
 .header,
@@ -21,12 +49,12 @@ ul {
 }
 
 .header-logo,
-h1 {
+.hero-main {
     color: #F9FAF8;
     font-weight: 900;
 }
 
-h1 {
+.hero-main {
     font-size: 48px;
 }
 
@@ -34,10 +62,14 @@ h1 {
     font-size: 24px;
 }
 
-.header-links,
+a,
 .intro-text {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.first-section {
+    display: flex;
 }
 
 .call-to-action,
@@ -48,12 +80,14 @@ button {
 
 .second-section {
     background-color: #F9FAF8;
+    padding-bottom: 80px;
 }
 
 .info {
     font-weight: 900;
     font-size: 36px;
     color: #1f2937;
+    text-align: center;
 }
 
 .third-section {
@@ -74,4 +108,26 @@ button {
 
 .fourth-section {
     background-color: #F9FAF8;
+}
+
+.intro-image{
+    width: 300px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.cards li{
+    display: flex;
+    flex-flow: column;
+    width: 150px;
+}
+
+.cards li img{
+    border: 3px blue solid;
+    border-radius: 10%;
 }
