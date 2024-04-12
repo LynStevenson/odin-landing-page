@@ -1,5 +1,6 @@
 * {
     font-family: "roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,13 +13,16 @@ a {
     text-decoration: none;
 }
 
-.box {
-    width: 800px;
+.grey-bg {
+    background-color: #E5E7EB;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
+.white-bg {
+    background-color: #F9FAF8;
+}
+
+.dark-bg{
+    background-color: #1f2937;
 }
 
 ul {
@@ -27,11 +31,27 @@ ul {
     padding: 0;
 }
 
+.page-width {
+    width: 800px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    padding-top: 14px;
+}
+
+.header-logo {
+    font-size: 24px;
+}
+
 .header-links,
 .header-content {
     display: flex;
     align-items: center;
-    padding-top: 8px;
 }
 
 .header-content {
@@ -42,44 +62,47 @@ ul {
     gap: 20px;
 }
 
-.header,
-.first-section,
-.footer {
-    background-color: #1f2937;
-}
-
 .header-logo,
 .hero-main {
     color: #F9FAF8;
     font-weight: 900;
 }
 
+.first-section-content {
+    display: flex;
+    gap: 20px;
+    margin: 100px 0px;
+}
+
 .hero-main {
     font-size: 48px;
 }
 
-.header-logo {
-    font-size: 24px;
-}
-
 a,
-.intro-text {
+.hero-sub {
     font-size: 18px;
     color: #E5E7EB;
-}
-
-.first-section {
-    display: flex;
+    font-weight: 300;
 }
 
 .call-to-action,
 button {
     background-color: #3882F6;
     color: #F9FAF8;
+    font-weight: 500;
+}
+
+.intro-button {
+    border: none;
+    border-radius: 7px;
+    width: 130px;
+    height: 35px;
+    margin-top: 10px;
+    font-size: 18px;
+    shad
 }
 
 .second-section {
-    background-color: #F9FAF8;
     padding-bottom: 80px;
 }
 
@@ -90,9 +113,7 @@ button {
     text-align: center;
 }
 
-.third-section {
-    background-color: #E5E7EB;
-}
+
 
 .quote {
     font-size: 36px;
@@ -106,9 +127,7 @@ button {
     font-weight: 900;
 }
 
-.fourth-section {
-    background-color: #F9FAF8;
-}
+
 
 .intro-image{
     width: 300px;
@@ -128,6 +147,5 @@ button {
 }
 
 .cards li img{
-    border: 3px blue solid;
     border-radius: 10%;
 }
