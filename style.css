@@ -32,7 +32,7 @@ ul {
 }
 
 .page-width {
-    width: 800px;
+    width: 1000px;
 }
 
 .center {
@@ -79,7 +79,9 @@ ul {
 }
 
 a,
-.hero-sub {
+.hero-sub,
+.call-to-action-sub,
+.footer-content {
     font-size: 18px;
     color: #E5E7EB;
     font-weight: 300;
@@ -92,18 +94,21 @@ button {
     font-weight: 500;
 }
 
+.call-to-action-button,
 .intro-button {
     border: none;
     border-radius: 7px;
     width: 130px;
     height: 35px;
-    margin-top: 10px;
     font-size: 18px;
-    shad
+}
+
+.intro-button {
+    margin-top: 10px;
 }
 
 .second-section {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .info {
@@ -112,8 +117,6 @@ button {
     color: #1f2937;
     text-align: center;
 }
-
-
 
 .quote {
     font-size: 36px;
@@ -126,8 +129,6 @@ button {
     color: #1f2937;
     font-weight: 900;
 }
-
-
 
 .intro-image{
     width: 300px;
@@ -143,9 +144,48 @@ button {
 .cards li{
     display: flex;
     flex-flow: column;
-    width: 150px;
+    width: 185px;
 }
 
 .cards li img{
     border-radius: 10%;
+}
+
+.third-section-content{
+    margin: 100px 0px;
+}
+
+.author {
+    text-align: end;
+    font-size: 20px;
+}
+
+.call-to-action {
+    margin: 80px 0px;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.call-to-action-main {
+    font-size: 18px;
+}
+
+.call-to-action-sub {
+    font-size: 14px;
+}
+
+.call-to-action-button {
+    border: #F9FAF8 solid 2px;
+}
+
+.third-section-content {
+    width: 790px;
+}
+
+.footer-content {
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 0px;
 }
